@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,289 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-chess-rook"></i>
+            <a href="">heejun</a>
+        </div>
+        <div >
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#testimonial">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        </div>
+        <!-- Toggle button -->
+        <div class="navbar__toggle-btn">
+            <i class="fas fa-hamburger"></i>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+            <img src="imgs/fox.jpg" alt="" class="home__avatar">
+            <h1 class="home__title">Hello <br>this is me</h1>
+            <h2 class="home__description">Slow and Consistant</h2>
+            <button class="home__contact" data-link="#contact">Conatct me</button>
+        </div>
+    </section>
+    <!-- About me -->
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae delectus vero deserunt, numquam
+            nesciunt quae ab eius odit quisquam vel porro minus atque maiores est quibusdam quasi officia veritatis.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h2 class="major__title">mobile</h2>
+                <div class="major__description">
+                    java, kotlin, javascript
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h2 class="major__title">mobile</h2>
+                <div class="major__description">
+                    java, kotlin, javascript
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-android"></i>
+                </div>
+                <h2 class="major__title">mobile</h2>
+                <div class="major__description">
+                    java, kotlin, javascript
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/deloitte.png" class="job__logo" alt="">
+                <div class="job__description">
+                    <p class="job__name">Deloitte</p>
+                    <p class="job__period">3months</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/deloitte.png" class="job__logo" alt="">
+                <div class="job__description">
+                    <p class="job__name">Deloitte</p>
+                    <p class="job__period">3months</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills&Attributes</h2>
+            <p>
+                배우는거 좋아하고 혼자서 잘 합니다~
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:99%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVA</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li>
+                                <spann>Android Studio</span>
+                            </li>
+                            <li><span>Eclipse</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Math</span></li>
+                            <li><span>English</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="*">
+                    All <span class="category__count">8</span>
+                </button>
+                <button class="category__btn" data-filter="front-end">
+                    Front-end <span class="category__count">4</span>
+                </button>
+                <button class="category__btn" data-filter="back-end">
+                    Back-end <span class="category__count">3</span>
+                </button>
+                <button class="category__btn" data-filter="mobile">
+                    Mobile <span class="category__count">3</span>
+                </button>
+            </div>
+
+            <div class="work__projects">
+                <a href="" class="project" data-type="front-end">
+                    <img src="/imgs/project1.png" class="project__img" alt="" />
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" data-type="front-end">
+                    <img src="/imgs/project2.png" class="project__img" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" data-type="back-end">
+                    <img src="/imgs/project3.png" class="project__img" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" data-type="back-end">
+                    <img src="/imgs/project4.png" class="project__img" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" data-type="mobile">
+                    <img src="/imgs/project5.png" class="project__img" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" data-type="mobile">
+                    <img src="/imgs/project6.png" class="project__img" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonial" class="section">
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="/imgs/testimonial/people1-200515-154332.jpg" class="testimonial__avatar" alt="">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim similique velit officia
+                            labore reprehenderit minus earum fugit perspiciatis vero cupiditate, natus facilis corporis
+                            dolores molestiae et vel dolorum explicabo.
+
+                        </p>
+                        <p class="name"><a href="">john</a>/Tesla</p>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim similique velit officia
+                            labore reprehenderit minus earum fugit perspiciatis vero cupiditate, natus facilis corporis
+                            dolores molestiae et vel dolorum explicabo.
+                        </p>
+                        <p class="name"><a href="">john</a>/Tesla</p>
+                    </div>
+                    <img src="/imgs/testimonial/people1-200515-154332.jpg" class="testimonial__avatar" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__title">victory_yang@naver.com</h2>
+        <div class="contact__links">
+            <a href="">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p class="contact__rights">written by heejun</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
+
 </html>
