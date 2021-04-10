@@ -5,14 +5,14 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-pink: #8dfec0ee;
+  --color-dark-pink: #ebd515cb;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-orange: #f77e2e;
   --color-black: #000000;
 
   /* Font size */
@@ -103,7 +103,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: pink;
+  background-color: var(--color-orange);
   padding: 8px;
 }
 .navbar__menu {
@@ -457,7 +457,7 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   color: var(--color-white);
   border-radius: 50%;
   opacity: 0;
@@ -489,7 +489,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: pink;
+    background-color: var(--color-pink);
   }
   #navbar.navbar--dark {
     padding: 16px;
